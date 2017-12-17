@@ -1,0 +1,32 @@
+{
+  "name": "normalize-url-pathname",
+  "version": "0.0.1",
+  "description": "normalize a string as pathname part of URL",
+  "main": "index.js",
+  "scripts": {
+	"start": "npm run eslint && npm run jshint && npm run jscs && npm run test",
+    "eslint": "eslint *.js",
+    "jshint": "jshint *.js",
+    "jscs": "jscs *.js",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/seaoak/normalize-url-pathname.git"
+  },
+  "keywords": [
+    "normalize",
+    "serialize",
+    "URL",
+    "pathname"
+  ],
+  "author": {
+    "name": "Seaoak",
+    "url": "https://seaoak.jp/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seaoak/normalize-url-pathname/issues"
+  },
+  "homepage": "https://github.com/seaoak/normalize-url-pathname#readme"
+}
