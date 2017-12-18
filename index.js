@@ -1,16 +1,15 @@
 ;(function() {
   'use strict';
 
-  function createURL(href) {
-    if (typeof URL !== 'undefined') return new URL(href);
-    if (typeof require !== 'undefined') return require('url').parse(href);
-    throw new Error('Sorry! This environment is not supported.');
-  }
-
   function normalizeUrlPathname(argPathname, argBaseUrl) {
     console.log('I\'m here!');
-    const url = createURL(argBaseUrl || 'https://localhost/');
-    url.pathname = argPathname;
+    const baseUrl = argBaseUrl || 'https://localhost/';
+    const url = (function() {
+      if (typeof URL !== 'undefined') return new URL(argPathname, baseUrl);
+      if (typeof require === 'undefined') throw new Error('Sorry! This environment is not supported.');
+      const url = require('url');
+      return url.parse(url.resolve(baseUrl, argPathname));
+    })();
     return url.pathname;
   }
 
