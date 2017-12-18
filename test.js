@@ -7,5 +7,5 @@ const assert = require('assert');
 console.log(typeof URL);
 console.log(typeof normalizer);
 
-const result = normalizer('/aaa');
-assert(result === '/aaa');
+assert.strictEqual(normalizer('/aaa'), '/aaa');
+assert.strictEqual(normalizer('/bbb/../../ccc/./../ddd/././eee'), '/ddd/eee');
