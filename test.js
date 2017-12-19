@@ -4,8 +4,6 @@ import test from 'ava';
 
 const normalizer = require('./');
 
-const assert = require('assert');
-
 function macro(t, pairs) {
   t.plan(pairs.length);
   pairs.forEach(pair => t.is(normalizer(pair[0]), pair[1]));
