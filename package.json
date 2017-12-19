@@ -8,7 +8,7 @@
     "eslint": "eslint *.js",
     "jshint": "jshint *.js",
     "jscs": "jscs *.js",
-    "test": "node test.js"
+    "test": "./node_modules/.bin/ava"
   },
   "repository": {
     "type": "git",
