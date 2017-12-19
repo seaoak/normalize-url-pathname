@@ -4,7 +4,7 @@
   "description": "normalize a string as pathname part of URL",
   "main": "index.js",
   "scripts": {
-	"start": "npm run eslint && npm run jshint && npm run jscs && npm run test",
+    "start": "npm run eslint && npm run jshint && npm run jscs && npm run test",
     "eslint": "eslint *.js",
     "jshint": "jshint *.js",
     "jscs": "jscs *.js",
