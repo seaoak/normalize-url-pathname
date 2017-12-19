@@ -39,7 +39,6 @@
     str => str.includes('\0') ? undefined : str);
 
   function normalizeUrlPathname(argPathname, argBaseUrl) {
-    console.log('I\'m here!');
     const baseUrl = argBaseUrl || 'https://localhost/';
     if (! argPathname) return '/';
     const cleaned = cleaner(argPathname);
