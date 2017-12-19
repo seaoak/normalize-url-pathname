@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/seaoak/normalize-url-pathname/issues"
   },
-  "homepage": "https://github.com/seaoak/normalize-url-pathname#readme"
+  "homepage": "https://github.com/seaoak/normalize-url-pathname#readme",
+  "devDependencies": {
+    "ava": "^0.24.0"
+  }
 }
