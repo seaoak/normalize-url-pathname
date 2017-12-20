@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run eslint && npm run jshint && npm run jscs && npm run test",
-    "eslint": "./node_modules/.bin/eslint *.js",
-    "jshint": "./node_modules/.bin/jshint *.js",
-    "jscs": "./node_modules/.bin/jscs *.js",
-    "test": "./node_modules/.bin/ava --verbose"
+    "eslint": "eslint *.js",
+    "jshint": "jshint *.js",
+    "jscs": "jscs *.js",
+    "test": "ava --verbose"
   },
   "repository": {
     "type": "git",
