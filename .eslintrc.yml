@@ -27,7 +27,7 @@ overrides:
   globals:
     require: false
     module: false
-    exports: true
+    exports: false
     window: false
     global: false
     URL: false
