@@ -1,6 +1,6 @@
 {
   "name": "normalize-url-pathname",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "normalize a string as pathname part of URL",
   "main": "index.js",
   "scripts": {
