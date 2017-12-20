@@ -7,7 +7,7 @@
     "start": "npm run eslint && npm run jshint && npm run jscs && npm run test",
     "eslint": "./node_modules/.bin/eslint *.js",
     "jshint": "./node_modules/.bin/jshint *.js",
-    "jscs": "jscs *.js",
+    "jscs": "./node_modules/.bin/jscs *.js",
     "test": "./node_modules/.bin/ava --verbose"
   },
   "repository": {
@@ -32,6 +32,7 @@
   "devDependencies": {
     "ava": "^0.24.0",
     "eslint": "^4.13.1",
+    "jscs": "^3.0.7",
     "jshint": "^2.9.5"
   }
 }

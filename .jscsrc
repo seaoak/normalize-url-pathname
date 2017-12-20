@@ -1,0 +1,8 @@
+{
+  "disallowSpaceAfterPrefixUnaryOperators": null,
+  "maximumLineLength": null,
+  "requireCapitalizedComments": null,
+  "requireCurlyBraces": null,
+
+  "preset": "node-style-guide"
+}
