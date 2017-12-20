@@ -55,7 +55,7 @@ test('reserved character treatment', macro, [
   ['/aaa]bbb', undefined],
 
   ['/aaa\\bbb', undefined],
-  ['/aaa\"bbb', undefined],
+  ['/aaa"bbb', undefined],
 
   ['/aaa!bbb', '/aaa!bbb'],
   ['/aaa$bbb', '/aaa$bbb'],

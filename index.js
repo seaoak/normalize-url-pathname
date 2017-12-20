@@ -1,4 +1,4 @@
-;(function() {
+;(function() { // eslint-disable-line no-extra-semi
   'use strict';
 
   const MyURL = (function() {
@@ -28,7 +28,7 @@
   }
 
   function removeInvalidCharacter(str) {
-    return str.replace(/[^-._~a-zA-Z0-9%!$&''()*+,;=:@\/]/g, str => '\0'); // RFC3986
+    return str.replace(/[^-._~a-zA-Z0-9%!$&''()*+,;=:@/]/g, () => '\0'); // RFC3986
   }
 
   const cleaner = pipe(
