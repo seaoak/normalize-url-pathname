@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run eslint && npm run jshint && npm run jscs && npm run test",
     "eslint": "eslint *.js",
-    "jshint": "jshint *.js",
+    "jshint": "./node_modules/.bin/jshint *.js",
     "jscs": "jscs *.js",
     "test": "./node_modules/.bin/ava --verbose"
   },
@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/seaoak/normalize-url-pathname#readme",
   "devDependencies": {
-    "ava": "^0.24.0"
+    "ava": "^0.24.0",
+    "jshint": "^2.9.5"
   }
 }
