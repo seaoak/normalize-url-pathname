@@ -40,8 +40,8 @@
 
   function normalizeUrlPathname(argPathname, argBaseUrl) {
     const baseUrl = argBaseUrl || 'https://localhost/';
-    if (! argPathname) return '/';
-    const cleaned = cleaner(argPathname);
+    const target = argPathname || './';
+    const cleaned = cleaner(target);
     if (! cleaned) return undefined;
     const url = new MyURL(cleaned, baseUrl);
     const result = url.pathname;
